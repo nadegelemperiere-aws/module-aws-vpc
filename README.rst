@@ -39,7 +39,7 @@ Getting Started
 Prerequisites
 -------------
 
-N.A.
+A loggroup and an S3 bucket shall have been created prior to the vpc if logging is enabled for vpc
 
 Configuration
 -------------
