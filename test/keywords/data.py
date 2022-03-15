@@ -1,8 +1,8 @@
 # -------------------------------------------------------
-# TECHNOGIX 
+# TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
-# All rights reserved 
+# Copyright (c) [2022] Technogix SARL
+# All rights reserved
 # -------------------------------------------------------
 # Keywords to create data for module test
 # -------------------------------------------------------
@@ -24,7 +24,7 @@ from ipaddress import IPv4Network
 
 @keyword('Load Standard Test Data')
 def load_standard_test_data(vpc, nacl, route, sg) :
-    
+
     result = {}
 
     result['vpc'] = []
@@ -42,7 +42,7 @@ def load_standard_test_data(vpc, nacl, route, sg) :
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Environment' , 'Value' : 'test'})
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Owner'       , 'Value' : 'moi.moi@moi.fr'})
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Name'        , 'Value' : 'test.test.test.vpc'})
-    
+
     result['nacl'] =  []
     result['nacl'].append({})
     result['nacl'][0]['name'] = 'standard'
@@ -105,7 +105,7 @@ def load_standard_test_data(vpc, nacl, route, sg) :
 
 @keyword('Load Logging Test Data')
 def load_logging_test_data(vpc, nacl, route, sg, logging) :
-    
+
     result = {}
 
     result['vpc'] = []
@@ -123,7 +123,7 @@ def load_logging_test_data(vpc, nacl, route, sg, logging) :
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Environment' , 'Value' : 'test'})
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Owner'       , 'Value' : 'moi.moi@moi.fr'})
     result['vpc'][0]['data']['Tags'].append({'Key'          : 'Name'        , 'Value' : 'test.test.test.vpc'})
-    
+
     result['nacl'] =  []
     result['nacl'].append({})
     result['nacl'][0]['name'] = 'logging'
@@ -206,7 +206,7 @@ def load_logging_test_data(vpc, nacl, route, sg, logging) :
     result['flows'][1]['data']['Tags'].append({'Key'          : 'Environment' , 'Value' : 'test'})
     result['flows'][1]['data']['Tags'].append({'Key'          : 'Owner'       , 'Value' : 'moi.moi@moi.fr'})
     result['flows'][1]['data']['Tags'].append({'Key'          : 'Name'        , 'Value' : 'test.test.test.vpc.logs.s3'})
-    
+
     logger.debug(dumps(result))
 
     return result
