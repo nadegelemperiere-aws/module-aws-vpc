@@ -1,7 +1,5 @@
 # -------------------------------------------------------
-# TECHNOGIX
-# -------------------------------------------------------
-# Copyright (c) [2022] Technogix SARL
+# Copyright (c) [2022] Nadege Lemperiere
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy the basic vpc structure
@@ -14,39 +12,45 @@
 # Contact e-mail for this deployment
 # -------------------------------------------------------
 variable "email" {
-	type 	= string
+	type 	 = string
+	nullable = false
 }
 
 # -------------------------------------------------------
 # Environment for this deployment (prod, preprod, ...)
 # -------------------------------------------------------
 variable "environment" {
-	type 	= string
+	type 	 = string
+	nullable = false
 }
 
 # -------------------------------------------------------
 # Topic context for this deployment
 # -------------------------------------------------------
 variable "project" {
-	type    = string
+	type     = string
+	nullable = false
 }
 variable "module" {
-	type 	= string
+	type 	 = string
+	nullable = false
 }
 
 # -------------------------------------------------------
 # Solution version
 # -------------------------------------------------------
 variable "git_version" {
-	type    = string
-	default = "unmanaged"
+	type     = string
+	nullable = false
+	default  = "unmanaged"
 }
 
 # --------------------------------------------------------
 # VPC configuration
 # --------------------------------------------------------
 variable "cidr" {
-	type = string
+	type     = string
+	nullable = false
 }
 
 # --------------------------------------------------------
