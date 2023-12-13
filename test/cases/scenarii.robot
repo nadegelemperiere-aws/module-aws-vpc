@@ -22,7 +22,6 @@ Library         OperatingSystem
 ${KEEPASS_DATABASE}                 ${vault_database}
 ${KEEPASS_KEY_ENV}                  ${vault_key_env}
 ${KEEPASS_PRINCIPAL_KEY_ENTRY}      /aws/aws-principal-access-key
-${KEEPASS_ID_ENTRY}                 /aws/aws-sso-sysadmin-group-id
 ${REGION}                           eu-west-1
 
 *** Test Cases ***
