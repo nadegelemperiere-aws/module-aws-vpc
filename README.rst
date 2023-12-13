@@ -26,10 +26,10 @@ This project contains all the infrastructure as code (IaC) to deploy a virtual p
 Built With
 ----------
 
-.. image:: https://img.shields.io/static/v1?label=terraform&message=1.1.7&color=informational
+.. image:: https://img.shields.io/static/v1?label=terraform&message=1.6.4&color=informational
    :target: https://www.terraform.io/docs/index.html
    :alt: Terraform
-.. image:: https://img.shields.io/static/v1?label=terraform%20AWS%20provider&message=4.4.0&color=informational
+.. image:: https://img.shields.io/static/v1?label=terraform%20AWS%20provider&message=5.26.0&color=informational
    :target: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
    :alt: Terraform AWS provider
 
